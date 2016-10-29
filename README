@@ -1,0 +1,19 @@
+README for part-3
+My xmalloc is made to continue running and allow the user to make mistakes, then report them through stderr and give a status report upon exit.
+
+make clean to clean up the .o and exec files.
+make run-XX to run a specific test
+make all to make all tests and link them
+make test-XX.o to compile and link specific tests
+make xmalloc.o to compile xmalloc.o
+make test-XX to create exec for specific test
+
+test-1.c Tests for double free using xmalloc
+test-2.c Tests for memory leak by double malloc
+test-3.c Tests for freeing an illegal pointers
+test-4.c Tests an intentional memory leak
+test-5.c Tests for standard, accepted use of xmalloc. xmalloc and xfree work properly
+test-6.c Tests freeing pointer outside of malloc'd space.
+test-7.c Tests freeing memory in the middle of a memory chunk
+
+Non memory leak tests, memory is intentionally cleaned up as to not clutter the error messages.
